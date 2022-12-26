@@ -48,6 +48,7 @@ divList = innerDiv.find_elements(By.XPATH,"//article")
 print(len(divList))
 textList = []
 attrList = []
+
 for i in divList:
     # print(i.text)
     textList.append(i.text)
@@ -57,11 +58,10 @@ for i in divList:
 print(textList)
 print(len(divList))
 divList[3].click()
-time.sleep(1000)
+time.sleep(90)
 
 # driver.find_elements_by_css_selector("[aria-label=XXXX]")
 # r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03
-
 # def comment(index):
 #   t = driver.find_element(By.CSS_SELECTOR,f'[aria-labelledby={attrList[index]}]')
     # return
