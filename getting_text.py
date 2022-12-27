@@ -60,6 +60,17 @@ print(len(divList))
 divList[3].click()
 time.sleep(90)
 
+
+bully = []
+with open(r'bully.txt', 'r') as fp:
+    for line in fp:
+        # remove linebreak from a current name
+        # linebreak is the last character of each line
+        x = line[:-1]
+        bully.append(int(x))
+
+print(bully)
+
 # driver.find_elements_by_css_selector("[aria-label=XXXX]")
 # r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03
 # def comment(index):
